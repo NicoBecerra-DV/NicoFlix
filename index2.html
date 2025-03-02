@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NicoFlix</title>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">
+                Nico<span>Flix</span>
+            </a>
+            <form  id="form">
+                <input type="text" placeholder="Search Movies" id="search" class="search">
+                <i class='bx bx-search'></i>
+            </form>
+            <a href="" class="user">
+                <img src="img/user.jpg" alt="" class="user-img">
+            </a>
+            <div class="navbar">
+                <a href="#home" class="nav-link nav-active">
+                    <i class='bx bx-home' ></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bxs-hot' ></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bx-heart' ></i>
+                    <span class="nav-link-title">Favourite</span>
+                </a>
+                <a href="#home" class="nav-link">
+                    <i class='bx bx-compass' ></i>
+                    <span class="nav-link-title">Explore</span>
+                </a>
+            </div>
+        </div>
+        
+    </header>
+    <section class="home container" id="home">
+        <img src="img/home-background.png" alt="" class="home-img">
+        <div class="home-text">
+            <h1 class="home-title">el titulo de la pelicual</h1>
+            <p>Cuando se extrena</p>
+            <a href="#" class="watch-btn">
+                <i class='bx bx-right-arrow' ></i>
+                <span>Mira ahora el trailer</span>
+            </a>
+        </div>
+    </section>
+    <!-- revisar navbar de items
+     <section class="popular container" id="popular">
+        <div class="heading">
+            <h2 class="heading-title">Popular movies</h2>
+        </div>
+    </section> -->
+    <section class="popular contianer" id="popular">
+        <div class="heading">
+            <h2 class="heading-title">Popular Movies</h2>
+        </div>
+    </section>
+    <section class="popular contianer" id="popular">
+        <div class="heading">
+            <h2 class="heading-title">Favourite Movies</h2>
+        </div>
+    </section>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+    <main id="main"></main>
+
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
